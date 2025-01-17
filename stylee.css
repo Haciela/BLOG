@@ -1,11 +1,13 @@
-*{
-    background-color: #FFE6D6;
-}
+
 
 h1 {
     text-align: center;
     font-family: cursive;
     font-size: 35px;
+    border-top: 2px solid #8AAB7E;
+    border-right: 2px dotted red;
+    border-bottom: 2px solid blue;
+    border-left: 2px dashed yellow;
 }
 
 h2 {
@@ -13,6 +15,7 @@ text-align:center;
 color:#004FB6;
 font-family:cursive;
 font-size: 25px;
+border: 3px solid black;
 }
 
 p{
@@ -20,5 +23,9 @@ p{
     color: #55433C;
 }
 
+.listas{
+    background-color:#8AAB7E;
+    color:#9B1922;
+}
 
 
