@@ -29,24 +29,52 @@
                     Edad: <input type="number" placeholder="23" required min="18" max="110"> <br> <!--el placeholder es para indicar como se debe llenar ese espacio, sale más clarito, es como marca de agua que no es fijo solo ilustrativo-->
 Correo Electrónico: <input type="email" required placeholder="vale.acevesschzgmail.com"><br>
 <!-- Telefono: <input type="tel" name="" id="" required placeholder="5541382912"> -->
+ Género literario favorito: <select name="genero" id="">
+<option value="">ROMANCE</option>
+<option value="">COMEDIA</option>
+<option value="">DRAMA</option>
+<option value="">FANTASÍA</option>
+<option value="">ACCIÓN</option>
+<option value="">ROM-COM</option>
+<option value="">OTRO</option>
+ </select>
                 </fieldset>
 
                 <fieldset>
                     <legend><strong>Datos del pedido</strong></legend>
                 <span>Para brindarte un mejor servicio, el número mínimo de compra es de 2 artículos y el máximo es de 10. ¡Gracias por tu comprensión, disfruta tu compra!</span><br>
 Número de productos: <input type="number" required min="2" max="10"> <br> <!--min y max es para condicionar los numeros permitidos-->
-Pedido: <input type="text" required placeholder="dos separadores, 1 portalibros">
-<select name="libros" id="">
-<option value="">Alas de Sangre</option>
-<option value="">Alas de Hierro</option>
-<option value="">Alas de Onix</option>
-<option value="">Alas de Sangre y Alas de Hierro</option>
-<option value="">Los tres libros</option>
-<option value="">Alas de Hierro y Alas de Onix</option>
-</select> <br>
+<br>
+Pedido: <input type="text" required placeholder="dos separadores, 1 portalibros"> <br>
+
+
+<label><input type="checkbox" name="opciones" value="alas de sangre inglés">alas de sangre en inglés</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de sangre, pasta dura">alas de sangre, pasta dura</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de sangre, pasta blanda">alas de sangre, pasta blanda</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de hierro inglés">alas de hierro en inglés</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de sangre, edición especial">alas de sangre, edición especial</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de hierro, pasta dura">alas de hierro, pasta dura</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de hierro, pasta blanda">alas de hierro, pasta blanda</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de hierro, edición especial">alas de hierro, edición especial</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de onix en inglés">alas de onix en inglés</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de onix, pasta dura">alas de onix, pasta dura</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de onix, pasta blanda">alas de onix, pasta blanda</label> <br>
+
+<label><input type="checkbox" name="opciones" value="alas de onix, edicion especial">alas de onix, edicion especial</label> <br>
+<br>
 Fecha en que se hace el pedido<input type="date" name="" id=""><br>
 Envuelto para regalo <input type="radio"> <br>
-Si tienes alguna especificación sobre tu pedido, colocala aquí:<input type="text" placeholder="que vengan en dos cajas separadas, en bolsa..."> <br>
+Comentarios extra sobre la orden:<input type="text" placeholder="que venga en caja, bolsa, separado en dos pedidos..."> <br>
 <span><strong>NOTA</strong>: Se tiene un plazo de 10 días de entrega después del día de realizar el pedido.</span> <br>
                 </fieldset>
 
@@ -75,8 +103,6 @@ Si tienes alguna especificación sobre tu pedido, colocala aquí:<input type="te
             </form>
         </section>
     </main>
-
-
 
 </body>
 
