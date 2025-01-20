@@ -118,9 +118,42 @@ h3 {
     margin: 8px;
     text-decoration: none;
 }
+.blogger {
+    color: #282359;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+ol {
+    color: red;
+    font-family: "Love Ya Like A Sister", serif;
+    font-size: 21px;
+    border: #282359;
+    border-radius: 30%;
+    padding: blue solid;
+    margin: 10px;
+    background-color: cadetblue;
+}
+aside { 
+    display: flex;
+    align-items: flex-start;
+}
 
-.yo {
-   
+aside img {
+    width: 100px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+aside img:hover {
+    /*cuando el cursor está sobre la imagen*/
+    cursor: pointer;
+    width: 300px;
+    opacity: 2;
+    filter: contrast(120%);
 }
 
 
