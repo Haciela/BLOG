@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRA DE LIBROS</title>
+    <!--los tipos de input ayuda a que no haya tantos errores en los formularios y reduce el margen de error del usuario-->
+    <link rel="stylesheet" href="forms.css">
+
+</head>
+
+<body>
+    <header> <!--encabezado-->
+        <h1>¡A LEER!</h1>
+    </header>
+
+    <main>
+        <!--header  >navbar > main > sections  >> aside > footer, main es para decir que es el elemento principal pero puede llevar diferentes etiquetas dentro-->
+        <section>
+            <form action=""> <!--en medio el contenido, el action es el url de la base de datos-->
+                <fieldset><!--permite agrupar por campos-->
+                    <legend> <!--el nombre que tiene el formulario-->
+                        <strong>Datos básicos de contacto.</strong></legend>
+                        <span>Los siguientes datos son para completar tu orden y con fines estadisticos.</span> <br>
+
+                    Nombre(s): <input type="text" placeholder="Haciela" required> <!--el input puede ser de todo tipo, el required hace que sea obligatoria la pregunta--> <br>
+                    Apellido(s): <input type="text" placeholder="Aceves" required> <br>
+                    Edad: <input type="number" placeholder="23" required min="18" max="110"> <br> <!--el placeholder es para indicar como se debe llenar ese espacio, sale más clarito, es como marca de agua que no es fijo solo ilustrativo-->
+Correo Electrónico: <input type="email" required placeholder="vale.acevesschzgmail.com"><br>
+<!-- Telefono: <input type="tel" name="" id="" required placeholder="5541382912"> -->
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Datos del pedido</strong></legend>
+                <span>Para brindarte un mejor servicio, el número mínimo de compra es de 2 artículos y el máximo es de 10. ¡Gracias por tu comprensión, disfruta tu compra!</span><br>
+Número de productos: <input type="number" required min="2" max="10"> <br> <!--min y max es para condicionar los numeros permitidos-->
+Pedido: <input type="text" required placeholder="dos separadores, 1 portalibros">
+<select name="libros" id="">
+<option value="">Alas de Sangre</option>
+<option value="">Alas de Hierro</option>
+<option value="">Alas de Onix</option>
+<option value="">Alas de Sangre y Alas de Hierro</option>
+<option value="">Los tres libros</option>
+<option value="">Alas de Hierro y Alas de Onix</option>
+</select> <br>
+Fecha en que se hace el pedido<input type="date" name="" id=""><br>
+Envuelto para regalo <input type="radio"> <br>
+Si tienes alguna especificación sobre tu pedido, colocala aquí:<input type="text" placeholder="que vengan en dos cajas separadas, en bolsa..."> <br>
+<span><strong>NOTA</strong>: Se tiene un plazo de 10 días de entrega después del día de realizar el pedido.</span> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Datos de envío</strong></legend>
+                    <!--se debe vincular label con el id del input para poder clickear el texto y no solo el circulo de la opcion-->
+                    <label for="Recoger en alguna sucursal"> Recoger en sucursal: <input id="Recoger en sucursal" type="radio" name="entrega" id=""> </label>
+                    <select name="sucursales" id="">
+                        <option value="">Insurgentes Sur</option>
+                        <option value="">Coyoacan</option>
+                        <option value="">Coapa</option>
+                    </select> <br>
+                    <!--se puede usar datalist para desplegar otra forma de las opciones distinta a select pero con uso similar-->
+                    <label for="Envío a domicilio"> Envío a domicilio: <input id="Envío a domicilio" type="radio" name="entrega"> </label> <br> <!--se debe ajustar a que solo pueda responder una de las opciones radio, se debe agrupar con name para que solo seleccione uno.-->
+                Calle y número<input type="text"  placeholder="Ballena 30">
+                Alcaldía <input type="text"  placeholder="Tlahuac"> <br>
+                Ciudad <input type="text"  placeholder="CDMX">
+                Estado <input type="text"  placeholder="CDMX"> <br>
+                Especificaciones del domicilio: <input type="text" placeholder="zaguan negro con fachada beige..."> <br>
+                <input type="checkbox" required> Acepto los términos y condiciones de la transacción. <br>
+                <input type="checkbox"> Quiero que me envíen propaganda y promociones de la página a mi correo proporcionado. <br>
+        
+                </fieldset>
+<button type="submit"> ¡PEDIR YA!
+</button> <!--se puede elegir entre esa o en input button-->
+            </form>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
